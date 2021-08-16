@@ -1,5 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <listener>    
+  	<listener-class>jdbc.DBCPInitListener</listener-class>
+  </listener>
+  
+  <!-- 데이터베이스 연결 -->   
+  <context-param>
+  	<param-name>poolConfig</param-name>
+  	<param-value>
+  		jdbcdriver=oracle.jdbc.OracleDriver
+  		jdbcUrl=jdbc:oracle:thin:@localhost:1521:xe
+  		dbUser=hr
+  		dbPass=1234
+  		poolName=environment
+  		vaildationQuery=select 1
+  		minIdle=4
+  		maxTotal=50
+  	</param-value>
+  </context-param>
+  
+  <!-- 한글 깨짐 방지 -->
   <filter>
 		<filter-name>CharacterEncodingFilter</filter-name>
 		<filter-class>com.environment.web.filter.CharacterEncodingFilter</filter-class>
