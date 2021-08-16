@@ -1,6 +1,6 @@
 @charset "UTF-8";
 .u-section-1 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.15), rgba(0,0,0,0.15)), url("images/mainGrass.jpeg");
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.15), rgba(0,0,0,0.15)), url("../images/mainGrass.jpeg");
   background-position: 50% 50%;
 }
 
@@ -880,7 +880,7 @@
     margin-bottom: 892px;
   }
 }.u-section-4 {
-  background-image: url("images/section3.jpeg");
+  background-image: url("../images/section3.jpeg");
   background-position: 50% 18.34%;
 }
 
@@ -1685,7 +1685,7 @@
 
 .u-section-5 .u-image-1 {
   min-height: 423px;
-  background-image: url("images/566f75dac074d33710cfbfa3229d1e84.jpeg");
+  background-image: url("../images/566f75dac074d33710cfbfa3229d1e84.jpeg");
   background-position: 50% 50%;
 }
 
@@ -1709,7 +1709,7 @@
 
 .u-section-5 .u-image-2 {
   min-height: 423px;
-  background-image: url("images/f339d8968e405a704867c728844fb897.jpeg");
+  background-image: url("../images/f339d8968e405a704867c728844fb897.jpeg");
   background-position: 50% 50%;
 }
 
@@ -1733,7 +1733,7 @@
 
 .u-section-5 .u-image-3 {
   min-height: 423px;
-  background-image: url("images/7abbc1f5fafa0d74011f220ef66e7545.jpeg");
+  background-image: url("../images/7abbc1f5fafa0d74011f220ef66e7545.jpeg");
   background-position: 50% 50%;
 }
 
@@ -1757,7 +1757,7 @@
 
 .u-section-5 .u-image-4 {
   min-height: 423px;
-  background-image: url("images/088d3ff0a746c1dfbf342756f3a0cbf7.jpeg");
+  background-image: url("../images/088d3ff0a746c1dfbf342756f3a0cbf7.jpeg");
   background-position: 50% 50%;
 }
 
@@ -2121,7 +2121,7 @@
     margin-bottom: 43px;
   }
 }.u-section-6 {
-  background-image: url("images/36ced675fffdf7503938e3778dc8b3ca.jpeg");
+  background-image: url("../images/36ced675fffdf7503938e3778dc8b3ca.jpeg");
   background-position: 50% 0%;
 }
 
@@ -2302,7 +2302,7 @@
 
 .u-section-7 .u-image-2 {
   min-height: 318px;
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("images/41b7b9ce42d1f846a4d6e3d2469edd04.jpeg");
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("../images/41b7b9ce42d1f846a4d6e3d2469edd04.jpeg");
   background-position: 50% 50%;
   width: 519px;
   margin: -378px auto 0 0;
