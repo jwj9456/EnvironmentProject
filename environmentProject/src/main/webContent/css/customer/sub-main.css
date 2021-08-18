@@ -1,16 +1,18 @@
 @charset "UTF-8";
 
+/* width: 755px;
+padding-left: 35px;
+ */
 main {
 	position: relative;
 	min-height: inherit;
-	width: 755px;
-	padding-left: 35px;
+	width: 100%;
 	padding-top: 45px;
 	padding-bottom:80px;
 	float: left;
 	display: flex;
 	flex-direction: column;
-	margin: 0px 0px 0px 110px;
+	margin: 0px 0px 0px 0px;
 }
 
 main .stretch-child{

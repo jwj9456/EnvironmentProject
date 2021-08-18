@@ -3,9 +3,18 @@
 	background: #313131;	
 	height: 100px;
 	padding:20px;	
+	
+	/* footer 하단에 고정하기. */
+	position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+	padding: 15px 0;
 }
 
 #footer .content-container{
+	position:absolute;
+    bottom:0;
 	display: flex;
 	flex-flow:row wrap;
 	flex:1;
