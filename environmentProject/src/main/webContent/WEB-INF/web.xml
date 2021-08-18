@@ -4,7 +4,8 @@
   	<listener-class>jdbc.DBCPInitListener</listener-class>
   </listener>
    
-  <!-- 데이터베이스 연결  -->  
+  <!-- 데이터베이스 연결  -->
+  <!-- 교육용 계정 hr 이용  -->  
   <context-param>
   	<param-name>poolConfig</param-name>
   	<param-value>
@@ -20,7 +21,7 @@
   </context-param>
   
   <!-- 한글 깨짐 방지 -->
- <!--  <filter>
+  <!-- <filter>
 		<filter-name>CharacterEncodingFilter</filter-name>
 		<filter-class>com.environment.web.filter.CharacterEncodingFilter</filter-class>
 	</filter>
@@ -28,4 +29,22 @@
 		<filter-name>CharacterEncodingFilter</filter-name>
 		<url-pattern>/*</url-pattern>
 	</filter-mapping> -->
+	
+   <!-- ControllerUsingURI 설정 -->
+   <servlet>
+   		<servlet-name>ControllerUsingURI</servlet-name>
+   		<servlet-class>mvc.controller.ControllerUsingURI</servlet-class>
+   		<init-param>
+   			<param-name>configFile</param-name>
+   			<param-value>
+   				/WEB-INF/commandHandlerURI.properties
+   			</param-value>
+   		</init-param>
+   		<load-on-startup>1</load-on-startup>
+   </servlet>
+   
+   <servlet-mapping>
+   		<servlet-name>ControllerUsingURI</servlet-name>
+   		<url-pattern>*.do</url-pattern>
+   </servlet-mapping>
 </web-app>

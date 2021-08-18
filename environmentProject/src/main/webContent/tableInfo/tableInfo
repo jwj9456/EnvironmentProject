@@ -1,2 +1,7 @@
 <------------------- tableInfo ------------------------>
-1.
+CREATE TABLE members (
+memberid varchar(50) PRIMARY KEY,
+password varchar(20) not null,
+email varchar(50) not null,
+regdate timestamp not null
+)

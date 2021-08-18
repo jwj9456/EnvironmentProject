@@ -7,15 +7,19 @@ import java.sql.*;
 import java.sql.SQLException;
 
 public class JdbcUtil {
-	public static void close (ResultSet rs) throws SQLException {
+	public static void close (ResultSet rs) {
 		if(rs != null) {
-			rs.close();
+			try {
+				rs.close();
+			} catch(SQLException ex) { }
 		}
 	}
 	
-	public static void close (Statement stmt) throws SQLException {
+	public static void close (Statement stmt) {
 		if(stmt != null) {
-			stmt.close();
+			try {
+				stmt.close();
+			} catch(SQLException ex) { }
 		}
 	}
 	
@@ -24,15 +28,19 @@ public class JdbcUtil {
 	 * if(pstmt != null) { pstmt.close(); } }
 	 */
 	
-	public static void close (Connection conn) throws SQLException {
+	public static void close (Connection conn) {
 		if(conn != null) {
-			conn.close();
+			try {
+				conn.close();
+			} catch(SQLException ex) { }
 		}
 	}
 	
-	public static void rollback (Connection conn) throws SQLException {
+	public static void rollback (Connection conn) {
 		if(conn != null) {
-			conn.close();
+			try {
+				conn.rollback();
+			} catch(SQLException ex) { }
 		}
 	}
 	

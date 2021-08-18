@@ -3986,6 +3986,9 @@ section,
 summary {
   display: block;
 }
+header {
+	z-index: 2;	
+}
 audio,
 canvas,
 progress,
