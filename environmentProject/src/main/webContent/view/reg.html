@@ -6,17 +6,24 @@
     <meta charset="UTF-8">
 
     <!------------------- Use nicepage.css, Page-2.css ------------------------------->
-    <link rel="stylesheet" href="../css/customer/nicepage.css" media="screen">
+    <!-- <link rel="stylesheet" href="../css/customer/nicepage.css" media="screen"> -->
+    <!------------------- reg - Css ------------------------------->
  	<link href="../css/customer/layout.css" type="text/css" rel="stylesheet" />
  	<link href="../css/customer/sub-layout.css" type="text/css" rel="stylesheet" />
  	<link href="../css/customer/sub-main.css" type="text/css" rel="stylesheet" />
  	<link href="../css/customer/sub-visual.css" type="text/css" rel="stylesheet" />
 	<!------------------- Use jquery-1.9.1.min.js, nicepage.js ------------------------------->
-    <script class="u-script" type="text/javascript" src="../js/jquery-1.9.1.min.js" defer=""></script>
-    <script class="u-script" type="text/javascript" src="../js/nicepage.js" defer=""></script>
-   
+    <!-- <script class="u-script" type="text/javascript" src="../js/jquery-1.9.1.min.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="../js/nicepage.js" defer=""></script> -->
+    <!-- 네비게이션 include기능 -->
+	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript">   
+	$(document).ready( function() {
+		$("#navBar").load("../view/navBar.html");  //헤더 인클루드
+						 
+	});
+	</script>
     <style>
-    
         #visual .content-container{	
             height:inherit;
             display:flex; 
@@ -26,21 +33,22 @@
     </style>
 </head>
 <!-- 맨 위 라인 -->
+	<div id="navBar"></div>
   <!--------------------------------   header    ---------------------------------------->
-  <body data-home-page="https://website586556.nicepage.io/Page-2.html?version=eb22722a-7994-4203-95cf-f0dabd46ee8f" data-home-page-title="Page 2" class="u-body">
+  <!-- <body data-home-page="https://website586556.nicepage.io/Page-2.html?version=eb22722a-7994-4203-95cf-f0dabd46ee8f" data-home-page-title="Page 2" class="u-body">
     <header class="u-black u-clearfix u-header u-header" id="sec-5d34"><div class="u-align-left u-clearfix u-sheet u-sheet-1">
         <h3 class="u-align-left-xs u-headline u-text u-text-1">
-        <!-- 로고 -->
+        로고
           <h1 id="logo">
                 <a href="list.html">
-                    <img src="../images/logo.png" alt="뉴렉처 온라인" />
+                    <img src="../images/logo.png" alt="메인 페이지 입니다." />
                 </a>
             </h1>
         </h3>
         <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1" data-responsive-from="XL">
           <div class="menu-collapse">
             <a class="u-button-style u-nav-link u-text-body-alt-color" href="#" style="padding: 8px 0px;">
-            <!-- 맨 위 라인의 네비여는 아이콘 -->
+            맨 위 라인의 네비여는 아이콘
               <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 302 302"><use xlink:href="#svg-a760"></use></svg>
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="svg-a760" x="0px" y="0px" viewBox="0 0 302 302" style="enable-background:new 0 0 302 302;" xml:space="preserve" class="u-svg-content"><g><rect y="36" width="302" height="30"></rect><rect y="236" width="302" height="30"></rect><rect y="136" width="302" height="30"></rect>
             </a>
@@ -67,7 +75,7 @@
           </div>
         </nav>
       </div>
-    </header>
+    </header> -->
       <!-------------------------------- End header ---------------------------------------->
 
 
