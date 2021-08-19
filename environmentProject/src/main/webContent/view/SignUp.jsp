@@ -75,7 +75,7 @@
 				<input type="text" name="email" value="${param.email}">
 			</div>
 			<div class="button-area">
-				<button type="button">취소</button>
+				<button type="button" onclick="location.href = '../index.html'">취소</button>
 				<button type="submit">확인</button>
 			</div>
 			<c:if test="${errors.duplicateId or errors.password or errors.confirmPassword or errors.email}">

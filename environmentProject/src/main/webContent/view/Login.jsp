@@ -82,10 +82,10 @@
 				</c:if>
 			</div>
 			<div class="singup">
-				<a href="#">회원가입하기</a>
+				<a href="SignUp.jsp">회원가입하기</a>
 			</div>
 			<div class="button-area">
-				<button type="button">취소</button>
+				<button type="button" onclick="location.href = '../index.html'">취소</button>
 				<button type="submit">확인</button>
 			</div>
 		</form>
