@@ -1,28 +1,39 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<link rel="stylesheet" href="/environmentProject/css/newsCss.css">
-
 <!DOCTYPE html>
 <html>
 <head>
+
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+<!-- include기능 -->
+<script src="//code.jquery.com/jquery-1.11.0.min.js">
+</script>
+<script type="text/javascript">   
+$(document).ready( function() {
+					$("#navBar").load("../newsNav.html");  //헤더 인클루드
+					 
+});
+</script>
+
+<div id="navBar"></div>
 </head>
 
-<body>
-	<header class="u-black u-clearfix u-header u-header" id="sec-5d34"><div class="u-align-left u-clearfix u-sheet u-sheet-1">
-        
-    </header>
-	
+
+<body>	
 	<main>
+		<!-- NEWS 정보창 -->
 		<div class="newsLetter">
 			<h1>NEWS</h1>
-			<button href="" class="articleWrite">글쓰기</button>
+			${ctxPath = pageContext.request.contextPath;''}
+			<a href="${ctxPath}/news/write.do">글쓰기</a>			
 		</div>
 		
 		<div class="support-grid"></div>
 		
-		<div class="band">
+		<div class="band">	
 		    <div class="item-1">
 		        <a href="https://design.tutsplus.com/articles/international-artist-feature-malaysia--cms-26852" class="card">
 		          <div class="thumb" style="background-image: url(http://lorempixel.com/400/200/nature/1/);"></div>

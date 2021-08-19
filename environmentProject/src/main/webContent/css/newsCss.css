@@ -1,25 +1,30 @@
 @charset "UTF-8";
+
+
 html {
+	
   background: #f5f7f8;
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
-  padding: 20px;
+  
 }
 
 main {
-	padding: 100px 0;
+	
+	padding: 100px 100px;
+	
 }
 
 .band {
-  width: 90%;
-  max-width: 1240px;
+  width: 100%;
+  max-width: 1300px;
   margin: 0 auto;
   
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   grid-gap: 20px;
-  
+    
 }
 
 @media only screen and (min-width: 500px) {
@@ -73,10 +78,17 @@ main {
 
 /* typography */
 h1 {
-  font-size: 20px;
+  display: flex;
+  align-items: center;
+  font-size: 50px;
   margin: 0;
   color: #333;
   padding: 10px;
+}
+
+.band h1 {
+	font-size: 30px;
+	margin: 0 0 10px 0;
 }
 
 .card span  {
@@ -88,18 +100,15 @@ h1 {
   margin: 2em 0 0;
 }
 .newsLetter {
-  margin: 0 2em 1em 2em;
+  margin: 0 12em 2em 13em;
   display: flex;
   justify-content: space-between;
 }
-.newsLetter H1 {
-  font-size: 50px;
-  font-weight: bold;
-  color: #999;
-  letter-spacing: .05em;
-}
+
 .articleWrite {
 	display: flex;
 	align-items: center;
 	margin: 25px;
 }
+
+
