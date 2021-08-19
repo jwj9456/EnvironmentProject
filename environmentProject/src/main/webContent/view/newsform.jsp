@@ -9,11 +9,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
 <!-- include기능 -->
-<script src="//code.jquery.com/jquery-1.11.0.min.js">
-</script>
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript">   
 $(document).ready( function() {
-					$("#navBar").load("../newsNav.html");  //헤더 인클루드
+					$("#navBar").load("../view/newsNav.html");  //헤더 인클루드
 					 
 });
 </script>
