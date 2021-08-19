@@ -17,11 +17,12 @@ $(document).ready( function() {
 });
 </script>
 
-<div id="navBar"></div>
+
 </head>
 
 
 <body>	
+
 	<main>
 		<!-- NEWS 정보창 -->
 		<div class="newsLetter">
