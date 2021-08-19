@@ -6,10 +6,12 @@ import java.util.Map;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.envirinment.web.controller.admin.CommandHandler;
+
 import members.service.DuplicateIdException;
 import members.service.JoinRequest;
 import members.service.JoinService;
-import mvc.command.CommandHandler;
+
 
 public class JoinHandler implements CommandHandler {
 	private static final String FORM_VIEW = "/view/SignUp.jsp";
