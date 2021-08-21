@@ -1,12 +1,6 @@
-<<<<<<< HEAD
-/mvc/
-/members/
-/jdbc/
 /auth/
-=======
-/jdbc/
-/auth/
-/members/
-/mvc/
->>>>>>> refs/heads/master
 /com/
+/jdbc/
+/members/
+/mvc/
+/test/

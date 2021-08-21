@@ -13,7 +13,8 @@
 	<!------------------- Use jquery-1.9.1.min.js, nicepage.js ------------------------------->
     <script class="u-script" type="text/javascript" src="js/jquery-1.9.1.min.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="js/nicepage.js" defer=""></script>
-    
+   	
+   	<!------------------- Use validate plug in ------------------------------->
     <!------------------- Use font site connect------------------------------->
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
 </head>
@@ -82,7 +83,7 @@
 				</c:if>
 			</div>
 			<div class="singup">
-				<a href="SignUp.jsp">회원가입하기</a>
+				<a href="signUp.jsp">회원가입하기</a>
 			</div>
 			<div class="button-area">
 				<button type="button" onclick="location.href = '../index.html'">취소</button>

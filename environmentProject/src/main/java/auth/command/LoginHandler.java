@@ -13,7 +13,7 @@ import auth.service.LoginService;
 import auth.service.User;
 
 public class LoginHandler implements CommandHandler {
-	private static final String FORM_VIEW = "/view/Login.jsp";
+	private static final String FORM_VIEW = "/view/login.jsp";
 	private LoginService loginService = new LoginService();
 	
 	@Override

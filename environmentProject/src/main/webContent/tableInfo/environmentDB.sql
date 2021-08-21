@@ -11,6 +11,8 @@ select * from members where memberid = 'default';
 
 insert into members values('default', '1234', 'default@email.com', systimestamp);
 
+truncate table members;
+
 /* -뉴스-
  * 뉴스기사 테이블
  * 번호, 

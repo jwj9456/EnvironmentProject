@@ -13,8 +13,42 @@
 	<!------------------- Use jquery-1.9.1.min.js, nicepage.js ------------------------------->
     <script class="u-script" type="text/javascript" src="js/jquery-1.9.1.min.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="js/nicepage.js" defer=""></script>
-    
-    <!------------------- Use font site connect------------------------------->
+    <!------------------- Use validate plug in ------------------------------->
+	<script type="text/javascript">
+	function Validation(){
+ 		var RegExp = /^[a-zA-Z]{4,12}$/; // 아이디 유효성 검사
+ 		var RegExp2 = /^[a-zA-Z0-9]{4,12}$/; // 페스워드 유효성 검사
+		var exptext = /^[A-Za-z0-9_\.\-]+@[A-Za-z0-9\-]+\.[A-Za-z0-9\-]+/; // 이메일 유효성 검사
+
+ 		var id = document.getElementById("id");
+ 		var pass = document.getElementById("password");
+ 		var email = document.getElementById("email");
+ 
+ 	// 아이디가 4~12자리 영문대소문자와 숫자로만 입력
+ 		if(!RegExp.test(id.value)){
+ 			alert("4~12자리 영문대소문자로만 입력해주세요");
+	 		return false;
+ 		}
+ 
+ 	//id와 password가 같을 경우
+ 		if(id.value == pass.value){
+ 			alert("id와 password가 같습니다.");
+ 			return false;
+ 		}
+
+	//password 4~12자리 영문대소문자와 숫자로만 입력
+ 		if(!RegExp2.test(pass.value)){
+ 			alert("password를 4~12자리 영문대소문자와 숫자로만 입력.");
+ 			return false;
+ 		}
+
+	// 이메일이 이메일 형식과 맞지 않을 경우
+ 		if(exptext.test(email.value) == false){
+ 			alert("이메일형식이 맞지 않습니다.");
+ 		 	return false;
+ 		}
+	</script>
+   	<!------------------- Use font site connect------------------------------->
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
 </head>
 <body data-home-page="https://website586556.nicepage.io/Page-2.html?version=eb22722a-7994-4203-95cf-f0dabd46ee8f" data-home-page-title="Page 2" class="u-body">
@@ -57,14 +91,14 @@
 <body>
 	<div class="center">
 		<h1><img id="logo" src="../images/login-logo.png"></h1>
-		<form action="join.do" method="post">
+		<form action="join.do" method="post" onsubmit="return Validation();">
 			<div class="text-area">
 				<label>아이디</label>
-				<input type="text" name="id" value="${param.id}">
+				<input type="text" name="id" id="id" value="${param.id}">
 			</div>
 			<div class="text-area">
 				<label>비밀번호</label>
-				<input type="password" name="password">
+				<input type="password" name="password" id="password" >
 			</div>
 			<div class="text-area">
 				<label>비밀번호 확인</label>
@@ -72,13 +106,13 @@
 			</div>
 			<div class="text-area">
 				<label>이메일</label>
-				<input type="text" name="email" value="${param.email}">
+				<input type="text" name="email" id="email" value="${param.email}">
 			</div>
 			<div class="button-area">
 				<button type="button" onclick="location.href = '../index.html'">취소</button>
 				<button type="submit">확인</button>
 			</div>
-			<c:if test="${errors.duplicateId or errors.password or errors.confirmPassword or errors.email}">
+			<c:if test="${errors.id or errors.password or errors.confirmPassword or errors.email}">
 				<script type="text/javascript">
 					alert('모든 입력칸을 체워주세요.');
 				</script>

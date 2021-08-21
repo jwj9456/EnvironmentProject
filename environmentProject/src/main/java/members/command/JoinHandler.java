@@ -14,7 +14,7 @@ import members.service.JoinService;
 
 
 public class JoinHandler implements CommandHandler {
-	private static final String FORM_VIEW = "/view/SignUp.jsp";
+	private static final String FORM_VIEW = "/view/signUp.jsp";
 	private JoinService joinService = new JoinService();
 	
 	@Override
@@ -51,7 +51,7 @@ public class JoinHandler implements CommandHandler {
 		
 		try {
 			joinService.join(joinReq);
-			return "/view/Login.jsp";
+			return "/view/login.jsp";
 		} catch (DuplicateIdException e) {
 			errors.put("duplicateId", Boolean.TRUE);
 			return FORM_VIEW;
