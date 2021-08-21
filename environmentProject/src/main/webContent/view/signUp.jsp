@@ -14,40 +14,7 @@
     <script class="u-script" type="text/javascript" src="js/jquery-1.9.1.min.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="js/nicepage.js" defer=""></script>
     <!------------------- Use validate plug in ------------------------------->
-	<script type="text/javascript">
-	function Validation(){
- 		var RegExp = /^[a-zA-Z]{4,12}$/; // 아이디 유효성 검사
- 		var RegExp2 = /^[a-zA-Z0-9]{4,12}$/; // 페스워드 유효성 검사
-		var exptext = /^[A-Za-z0-9_\.\-]+@[A-Za-z0-9\-]+\.[A-Za-z0-9\-]+/; // 이메일 유효성 검사
-
- 		var id = document.getElementById("id");
- 		var pass = document.getElementById("password");
- 		var email = document.getElementById("email");
- 
- 	// 아이디가 4~12자리 영문대소문자와 숫자로만 입력
- 		if(!RegExp.test(id.value)){
- 			alert("4~12자리 영문대소문자로만 입력해주세요");
-	 		return false;
- 		}
- 
- 	//id와 password가 같을 경우
- 		if(id.value == pass.value){
- 			alert("id와 password가 같습니다.");
- 			return false;
- 		}
-
-	//password 4~12자리 영문대소문자와 숫자로만 입력
- 		if(!RegExp2.test(pass.value)){
- 			alert("password를 4~12자리 영문대소문자와 숫자로만 입력.");
- 			return false;
- 		}
-
-	// 이메일이 이메일 형식과 맞지 않을 경우
- 		if(exptext.test(email.value) == false){
- 			alert("이메일형식이 맞지 않습니다.");
- 		 	return false;
- 		}
-	</script>
+	<script type="text/javascript" src="../js/joinck.js"></script>
    	<!------------------- Use font site connect------------------------------->
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
 </head>
