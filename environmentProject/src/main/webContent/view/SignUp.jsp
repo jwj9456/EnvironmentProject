@@ -56,7 +56,7 @@
     </header>
 <body>
 	<div class="center">
-		<h1><img id="logo" src="../images/logo.png"></h1>
+		<h1><img id="logo" src="../images/login-logo.png"></h1>
 		<form action="join.do" method="post">
 			<div class="text-area">
 				<label>아이디</label>

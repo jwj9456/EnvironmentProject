@@ -56,7 +56,7 @@
       </div>
     </header>
 	<div class="center">
-		<h1><img id="logo" src="../images/logo.png"></h1>
+		<h1><img id="logo" src="../images/login-logo.png"></h1>
 		<form action="login.do" method="post">
 		<c:if test="${errors.idOrPwNotMatch}">
 			<script type="text/javascript">
